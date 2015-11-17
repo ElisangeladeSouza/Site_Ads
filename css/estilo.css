@@ -1,5 +1,6 @@
 @charset "UTF-8";
 
+/* Inserção do caminho com a fonte personalizada */
 @font-face {
 	font-family: "FonteCabecalho";
 	src: url("../fontes/bubblegum-sans-regular.otf");
@@ -21,11 +22,13 @@ div#interface {
 	padding: 30px 10px 10px 10px;   
 }
 
+/* Formatação dos paragrafos do texto */
 p {
 	text-align: justify;
 	text-indent: 50px;	
 }
 
+/* Formatação do título principal do artigo */
 header#cabecalho-artigo h1 {
 	font-family: "FonteCabecalho", sans-serif;
 	font-size: 30pt;
@@ -35,17 +38,20 @@ header#cabecalho-artigo h1 {
 	margin-bottom: 0px;
 }
 
+/* Posicionamento da borda e sombreamento da img */
 figure.foto-legenda {
 	position: relative;
 	border: 8px solid white;
 	box-shadow: 1px 1px 4px black;
 }
 
+/* Imagem ocupar 100% do espaço onde for colocada */
 figure.foto-legenda img {
 	width: 100%;
 	height: 100%;
 }
 
+/* Posicionamento, cor e sombreamento da legenda da imagem */
 figure.foto-legenda figcaption {
 	opacity: 0;
 	position: absolute;
@@ -59,8 +65,82 @@ figure.foto-legenda figcaption {
 	transition: opacity 1s;
 }
 
+/* Efeito ao passar o mouse sobre a imagem */
 figure.foto-legenda:hover figcaption {
 	opacity: 1;
+}
+
+/* Formatação do menu*/
+nav#menu {
+	display: block;
+}
+
+/* Remover macadores e posicionar menu na tela */
+nav#menu ul {
+	list-style: none;
+	position: absolute;
+	top: 10px;
+	left: 500px;
+}
+
+/* Alinhar menu*/
+nav#menu li, a {
+	float: left;
+}
+
+/* Inserção de imagem para menu com sprite */
+nav#menu a {
+	background: url('../imagens/menu-sprite.png') top left no-repeat;
+	height: 40px;
+	text-indent: -99999px;
+	font-size: 0.01em;
+	text-decoration: none;
+}
+
+/* Formatação da posição de cada elemento dentro do sprite*/
+nav#menu a.home {
+	width: 125px;
+	background-position: 0 0;
+}
+
+nav#menu a.home:hover {
+	background-position: 0 -40px;
+}
+
+nav#menu a.curso {
+	width: 125px;
+	background-position: -126px 0;	
+}
+
+nav#menu a.curso:hover {
+	background-position: -126px -40px;
+}
+
+nav#menu a.fotos {
+	width: 125px;
+	background-position: -252px 0;
+}
+
+nav#menu a.fotos:hover {
+	background-position: -252px -40px;
+}
+
+nav#menu a.multimidia {
+	width: 125px;
+	background-position: -379px 0;
+}
+
+nav#menu a.multimidia:hover {
+	background-position: -379px -40px;
+}
+
+nav#menu a.contato {
+	width: 127px;
+	background-position: -505px 0;
+}
+
+nav#menu a.contato:hover {
+	background-position: -505px -40px;
 }
 
 /*Formatação da section*/ 
@@ -72,6 +152,7 @@ section#corpo {
 	padding: 15px;
 }
 
+/* Posicionamento da barra lateral */
 aside#lateral {
 	display: block;
 	width: 370px;
@@ -82,23 +163,25 @@ aside#lateral {
 	box-shadow: 2px 2px 2px rgba(0, 0, 0, .5); 
 }
 
+/* Formatação dos paragráfos da barra lateral */
 aside#lateral p {
 	text-align: justify;
 }
 
+/* Formatação do h1 na barra lateral */
 aside#lateral h1 {
 	font-size: 20pt;
 	color: #606060;
 	margin-top: 20px;
 }
 
+/* Formatação do h2 na barra lateral */
 aside#lateral h2 {
 	background-color: #606060;
 	font-size: 13pt;
 	color: #FFFFFF;
 	padding: 5px;
 }
-
 
 /* Formatação do rodapé */
 footer#rodape {

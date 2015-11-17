@@ -1,0 +1,39 @@
+@charset "UTF-8";
+
+/* Formatação da div e inserção de imagem */
+div#pc-celular {
+	width: 900px;
+	height: 580px;
+	margin: auto;
+	background: url('../imagens/computador_celular.png') no-repeat;
+}
+
+/* Posicionamento do aúdio */
+audio#audio {
+	display: block;
+	position: relative;
+	left: 412px;
+	top: 470px;
+	width: 195px;
+}
+
+/* Posicionamento do vídeo */
+video#video {
+	display: block;
+	position: relative;
+	left: 50px;
+	top: 10px;
+	width: 498px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
