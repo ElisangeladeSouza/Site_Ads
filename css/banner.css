@@ -1,0 +1,12 @@
+@charset "UTF-8";
+
+div#banner {
+	position: relative;
+	width: 1030px;
+	margin-left: 35px;
+	height: 280px;
+	margin-top: 110px;
+	border-bottom: 1px #606060 solid;
+	overflow: hidden;
+}
+

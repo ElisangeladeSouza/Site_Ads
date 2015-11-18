@@ -7,6 +7,9 @@
 		Desenvolvimento de Sistemas do IFPB Campus Monteiro.">
 		<link rel="icon" href="imagens/favicon.ico" />
 		<link rel="stylesheet" type="text/css" href="css/estilo.css" />
+		<link rel="stylesheet" type="text/css" href="css/banner.css" />
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+		<script src="javascript/cycle.js" type="text/javascript"></script>
 	</head>
 	<body>
 		<div id="interface">
@@ -23,9 +26,12 @@
 					<li><a class="multimidia" href="multimidia.html">Multimídia</a></li>
 					<li><a class="contato" href="contato.html">Contato</a></li>
 				</ul>
-			</nav>foto-legenda
+			</nav>
 	
-	[Banner aqui]
+			<div id="banner">
+				<img id="banner1" src="imagens/banner_html_css.png" alt="Banner HTML5 + CSS 3"/>
+				<img id="banner2" src="imagens/banner_responsive.png" alt="Banner Layout Responsivo" />
+			</div>
 	
 			<section id="corpo">
 				<article id="artigo-principal">
@@ -163,5 +169,13 @@
 				<p>Copyright &copy; 2015 - by Elisângela de Souza</p>
 			</footer>
 		</div>
+		<script type="text/javascript">
+		$(function() {
+			$('#banner').cycle({ 
+			    fx:      'turnDown', 
+			    delay:   -4000 
+			});
+		});
+		</script>
 	</body>
 </html>
