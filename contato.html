@@ -1,15 +1,18 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html lang="pt-br">
-	<head>
-		<meta charset="UTF-8"/>
+<head>
+	<meta charset="UTF-8"/>
 		<title>ADS - Monteiro</title>
 		<meta name="description" content="Site desenvolvido para o curso de Análise e 
 		Desenvolvimento de Sistemas do IFPB Campus Monteiro.">
 		<link rel="icon" href="imagens/favicon.ico" />
 		<link rel="stylesheet" type="text/css" href="css/estilo.css" />
-	</head>
-	<body>
-		<div id="interface">
+		<link rel="stylesheet" type="text/css" href="css/banner.css" />
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+		<script src="javascript/cycle.js" type="text/javascript"></script>
+</head>
+<body>
+	<div id="interface">
 			<header id="cabecalho">
 				<img id="logoAds" src="imagens/logo_ads.png" 
 				alt="Logo do curso de ADS campus Monteiro"/>
@@ -25,8 +28,11 @@
 				</ul>
 			</nav>
 	
-			[Banner aqui]
-			
+			<div id="banner">
+				<img id="banner1" src="imagens/banner_html_css.png" alt="Banner HTML5 + CSS 3"/>
+				<img id="banner2" src="imagens/banner_responsive.png" alt="Banner Layout Responsivo" />
+			</div>
+	
 			<section id="corpo">
 				<article id="artigo-principal">
 					<header id="cabecalho-artigo">
@@ -35,30 +41,34 @@
 							<h1>Formulário de Contato</h1>
 							<h6>04/11/2015 por Elisângela de Souza</h6>
 						</hgroup>
-					</header>	
-				</article>
-			</section>
+					</header>
+			</article>
+		</section>
+		
+		<aside id="lateral">
+			<h1>Feed de Notícias</h1>
 			
-			<aside id="lateral">
-				<h1>Feed de Notícias</h1>
-				
-				<iframe width="350" height="300" src="https://www.youtube.com/embed/pDPeIL4dEPM" 
-				frameborder="0" allowfullscreen></iframe>
-				
-				<h1>Localização</h1>
-				
-				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3951.9059107706425!2d-37.12239508554513!3d-7.904897880854369!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7a88874a7c0ff71%3A0xa21051c1a7e97391!2sInstituto+Federal+de+Educa%C3%A7%C3%A3o%2C+Ci%C3%AAncia+e+Tecnologia+da+Para%C3%ADba+-+Campus+Monteiro!5e0!3m2!1spt-BR!2sbr!4v1447703602608" 
-				width="350" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
-					
-				<p><b>Endereço:</b>PB-264, S/N - Vila Santa Maria, Monteiro 
-					- PB, 58500-000</p>
-				<p><b>Localização:</b> Bloco D</p>
-				<p><b>Telefone:</b> (83) 3351-3751</p>
-			</aside>
-				
-			<footer id="rodape">
-				<p>Copyright &copy; 2015 - by Elisângela de Souza</p>
-			</footer>
-		</div>
-	</body>
+			<iframe width="350" height="300" src="https://www.youtube.com/embed/pDPeIL4dEPM" frameborder="0" allowfullscreen></iframe>
+
+			<h2>Colocar uma descrição de algo aqui</h2>
+			<h1>Localização</h1>
+
+			<iframe width="350" height="300" 
+			src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1689.6486183998124!2d-37.120291456091124!3d-7.905457484036898!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0000000000000000%3A0xa21051c1a7e97391!2sInstituto+Federal+de+Educa%C3%A7%C3%A3o%2C+Ci%C3%AAncia+e+Tecnologia+da+Para%C3%ADba+-+Campus+Monteiro!5e1!3m2!1spt-BR!2sbr!4v1442503933109" 
+			frameborder="0" style="border:0" allowfullscreen></iframe>
+		</aside>
+		
+		<footer id="rodape">
+			<p>Copyright &copy; 2015 - Desenvolvido por Elisângela de Souza</p>
+		</footer>
+	</div>
+	<script type="text/javascript">
+		$(function() {
+			$('#banner').cycle({ 
+			    fx:      'turnDown', 
+			    delay:   -4000 
+			});
+		});
+		</script>
+</body>
 </html>
