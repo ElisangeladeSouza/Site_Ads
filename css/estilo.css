@@ -152,6 +152,42 @@ section#corpo {
 	padding: 15px;
 }
 
+/*Formatação bordas e espaços internos da tabela*/
+table#tabela {
+	border: 1px solid #606060;
+	border-spacing: 0px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/*Formatação das bordas das células e alinhamentos de texto*/
+table#tabela td {
+	border: 1px solid #606060;
+	padding: 10px;
+	text-align: center;
+	vertical-align: middle;
+}
+
+/*Formatação para todas as células a esquerda */
+table#tabela td.colunaEsq {
+	color: #FFFFFF;
+	background-color: #606060;
+	vertical-align: top;
+	font-weight: bold;
+}
+
+/*Formatação para todas as células da direita*/
+table#tabela td.colunaDir {
+	background-color: #DDDDDD;
+}
+
+/*Formatação para título da tabela*/
+table#tabela caption {
+	color: #888888;
+	font-size: 13pt;
+	font-weight: bolder;
+}
+
 /* Posicionamento da barra lateral */
 aside#lateral {
 	display: block;
