@@ -1,0 +1,49 @@
+@charset "UTF-8"
+
+form#contato {
+	width: 600px;
+	margin: auto;
+}
+
+fieldset {
+	border-color: #CECECE;
+	margin: 20px auto;
+	padding: 10px;
+}
+
+label {
+	display: block;
+	padding: 8px 0;
+}
+
+input, textarea {
+	font-family: sans-serif;
+	font-weight: normal;
+	font-size: 13pt;
+	padding: 5px;
+}
+
+input:hover {
+	background-color: #DDDDDD;
+}
+
+input.botao {
+	display: block;
+	padding: 8px 0;
+	font-size: 15pt;
+	font-weight: bold;
+	font-family: sans-serif;
+	border-radius: 10px;
+}
+
+input.botao:hover {
+	color: #FFFFFF;
+	background-color: #00BFFF;
+}
+
+
+
+
+
+
+

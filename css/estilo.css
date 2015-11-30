@@ -78,7 +78,7 @@ nav#menu {
 /* Remover macadores e posicionar menu na tela */
 nav#menu ul {
 	list-style: none;
-	position: absolute;
+	position: static;
 	top: 10px;
 	left: 500px;
 }
